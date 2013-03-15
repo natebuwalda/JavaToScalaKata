@@ -9,14 +9,14 @@ class HelloWorldSpecification extends Specification {
 
   "The Hello World Java Class" should {
     "say 'hello from java'" in {
-      val javaHelloWorld = new JavaHelloWorld()
+      val javaHelloWorld = new JavaHelloWorld
       javaHelloWorld.sayHello() must be("hello from java")
     }
   }
 
   "The Hello World Scala Class" should {
     "say 'hello from scala'" in {
-      val scalaHelloWorld = new ScalaHelloWorld()
+      val scalaHelloWorld = new ScalaHelloWorld
       scalaHelloWorld.sayHello must be("hello from scala")
     }
   }
