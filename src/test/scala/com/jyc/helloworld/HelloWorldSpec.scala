@@ -5,11 +5,11 @@ import org.specs2.runner.JUnitRunner
 import org.specs2.mutable.Specification
 
 @RunWith(classOf[JUnitRunner])
-class HelloWorldSpecification extends Specification {
+class HelloWorldSpec extends Specification {
 
   "The Hello World Java Class" should {
     "say 'hello from java'" in {
-      val javaHelloWorld = new JavaHelloWorld
+      val javaHelloWorld = new JavaHelloWorld()
       javaHelloWorld.sayHello() must be("hello from java")
     }
   }
